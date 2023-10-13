@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>hogerLager</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body onload="welcomeFunction()">
+  <header>
+    <h1 class="header1">Dobbelsteen spel</h1>
+  </header>
+
+  <main>
+    <!-- Location of the FPS counter -->
+    <div class="fpsstyle"><span class="fps">:O</span>FPS</div>
+
+    <!-- container 1 with button 1 -->
+    <div class="container1">
+      <button class="button1 btn1 bt" onclick="throwDice(1)">
+        <div class="owntext"></div>
+        gooien
+      </button>
+
+      <details>
+        <summary>de tutorial</summary>
+        <div class="content">
+          <p>
+            Het de doel van dit spel is om 10 credits te halen. Elke keer dat
+            je wint krijg je +1 credit, elke keer dat je verliest krijg je -1
+            credit. Als je -5 credits hebt verlies je en +10 credits dan win je. Je
+            rolt een 20 kanten dobbelsteen voor jezelf en daarna gok je
+            of jij meer of minder krijgt dan de bot. Dit herhaal je tot dat
+            je wint of verliest.
+          </p>
+        </div>
+      </details>
+    </div>
+    <p>&nbsp;</p>
+    
+    <!-- container 3 with buttons 3 and 4 -->
+    <div class="container3">
+      <button class="button3 btn3 bt" onclick="throwDice(2); higherResult()">
+        hoger
+      </button>
+      <button class="button4 btn4 bt" onclick="throwDice(2); lowerResult()">
+        lager
+      </button>
+      <p class="plyr1">speler 1</p>
+      <p class="plyr2">speler 2</p>
+    </div>
+    <div class="imgcont1">
+      <p class="result1"></p>
+      <img />
+    </div>
+    <div class="imgcont2">
+      <p class="result2"></p>
+      <img />
+    </div>
+
+    <!-- h2 with class that alowes it to count the score -->
+    <h2 class="counter-display">0</h2>
+
+    <!-- Loads the javascript -->
+    <script src="js/script.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  </main>
+  <footer></footer>
+</body>
+
+</html>

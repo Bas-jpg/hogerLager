@@ -1,0 +1,212 @@
+* {
+  /* cursor: none; */
+  /* cursor: wait; */
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* body */
+body {
+  background-image: url("background/Poly.png"); width: 100%; height: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  color: #403a3a;
+}
+
+/* header That is centerd */
+.header1 {
+  text-align: center;
+}
+
+/* container 1 with button 1 */
+.container1 {
+  height: 100px;
+  position: relative;
+}
+
+.button1 {
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+/* container 3 with 2 buttons (button3 and button4) */
+.container3 {
+  margin-top: 20px;
+  height: 60px;
+  position: relative;
+}
+.button3 {
+  width: 300px;
+  height: 60px;
+  position: absolute;
+  left: 30%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.button4 {
+  width: 300px;
+  height: 60px;
+  position: absolute;
+  left: 70%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+/* de klasse om de buttons mooi te maken */
+.bt {
+  border-radius: 30px;
+  border: solid 3px;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* button1 wordt grijs */
+.btn1 {
+  border-color: #a5a5a5;
+  color: #000000;
+  transition: cubic-bezier(0.5, 0, 0, 1) 0.3s;
+}
+
+.btn1:hover {
+  background-color: #a5a5a5;
+  color: white;
+}
+
+.btn1:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* button3 wordt grijs */
+.btn3 {
+  border-color: #a5a5a5;
+  color: #000000;
+  transition: cubic-bezier(0.5, 0, 0, 1) 0.3s;
+}
+
+.btn3:hover {
+  background-color: #a5a5a5;
+  color: white;
+}
+
+.btn3:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* button4 wordt grijs */
+.btn4 {
+  border-color: #a5a5a5;
+  color: #000000;
+  transition: cubic-bezier(0.5, 0, 0, 1) 0.3s;
+}
+.btn4:hover {
+  background-color: #a5a5a5;
+  color: white;
+}
+
+.btn4:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.imgcont1 {
+  width: 300px;
+  height: 60px;
+  position: absolute;
+  margin-top: 50px;
+  left: 32.5%;
+  transform: translateX(-50%);
+  color: rgb(189, 189, 189);
+}
+
+.imgcont2 {
+  width: 300px;
+  height: 60px;
+  position: absolute;
+  margin-top: 50px;
+  left: 72.5%;
+  transform: translateX(-50%);
+  color: rgb(189, 189, 189);
+}
+
+#result2 {
+  opacity: 0%;
+}
+
+#result1 {
+  opacity: 0%;
+}
+
+.plyr1 {
+  position: absolute;
+  left: 30%;
+  transform: translateX(-50%);
+  color: rgb(0, 0, 0);
+  margin-top: 70px;
+  font-size: 30px;
+}
+
+.plyr2 {
+  position: absolute;
+  left: 70%;
+  transform: translateX(-50%);
+  color: rgb(0, 0, 0);
+  margin-top: 70px;
+  font-size: 30px;
+}
+
+.counter-display {
+  text-align: center;
+  margin-top: -100px;
+  font-size: 40px;
+}
+
+summary {
+  color: white;
+  background: #403a3a;
+  padding: 5px;
+  border: 2px solid transparent;
+  outline: none;
+}
+
+details {
+  max-width: 500px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-left: 85%;
+}
+.content {
+  border-top: none;
+  padding: 10px;
+  border: 2px solid #403a3a;
+  border-top: none;
+  background-color: rgb(255, 255, 255, 0.9);
+}
+
+.fpsstyle {
+  color: white;
+}
+/* 
+White aluminium
+HEX: #A5A5A5
+RGB: 165-165-165
+
+Distant blue
+HEX: #49678D
+RGB: 073-103-141
+
+Grey brown
+HEX: #403A3A
+RGB: 064-058-058
+*/
